@@ -81,7 +81,7 @@ const translations = {
         // Home
         home_greeting: "Hello, I am",
         home_name: "Ali <span class='gradient-text'>Khaled</span>",
-        home_title: "Flutter Developer & Teaching Assistant",
+        home_title: "Flutter Developer & Teaching Assistant EELU ",
         home_desc: "I have extensive experience in mobile app development and teaching programming. I always strive to build high-performance apps and innovative software solutions.",
         btn_works: "View My Works",
         btn_contact: "Contact Me",
