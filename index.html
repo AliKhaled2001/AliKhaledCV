@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علي خالد | مطور تطبيقات Flutter | Ali Khaled Portfolio</title>
+    <meta name="description"
+        content="البورتفوليو الشخصي لعلي خالد - مطور تطبيقات Flutter ومعيد بالجامعة المصرية للتعلم الإلكتروني">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- Background Animated Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                Ali<span class="gradient-text">Khaled</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active" data-i18n="nav_home">الرئيسية</a>
+                <a href="#cv" data-i18n="nav_cv">السيرة الذاتية</a>
+                <a href="#works" data-i18n="nav_works">المشاريع</a>
+                <a href="#contact" data-i18n="nav_contact">التواصل</a>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- View CV -->
+                <a href="files/cv.pdf" target="_blank" class="control-btn" title="عرض السيرة الذاتية"
+                    aria-label="عرض السيرة الذاتية">
+                    <i class="fas fa-eye"></i>
+                </a>
+                <!-- Download CV -->
+                <a href="files/cv.pdf" download class="control-btn" title="تحميل السيرة الذاتية"
+                    aria-label="تحميل السيرة الذاتية">
+                    <i class="fas fa-download"></i>
+                </a>
+                <button id="lang-toggle" class="control-btn" aria-label="تغيير اللغة">EN</button>
+                <button id="theme-toggle" class="control-btn" aria-label="تغيير المظهر">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <div class="container home-content">
+                <div class="home-text reveal">
+                    <h3 data-i18n="home_greeting">مرحباً، أنا</h3>
+                    <h1 data-i18n="home_name">علي <span class="gradient-text">خالد</span></h1>
+                    <h2 data-i18n="home_title">مطور تطبيقات Flutter EELU ومعيد بالجامعةالمصرية الاهلية</h2>
+                    <p data-i18n="home_desc">أمتلك خبرة واسعة في تطوير تطبيقات الهواتف المحمولة وتدريس البرمجة. أسعى
+                        دائماً لبناء تطبيقات ذات أداء عالي وحلول برمجية مبتكرة.</p>
+                    <div class="home-buttons">
+                        <a href="#works" class="btn btn-primary" data-i18n="btn_works">شاهد أعمالي</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">تواصل معي</a>
+                        <a href="files/cv.pdf" download class="btn btn-secondary" data-i18n="btn_download_cv">تحميل
+                            CV</a>
+                    </div>
+                </div>
+                <div class="home-image reveal delay-2">
+                    <div class="image-wrapper glass-panel">
+                        <img src="image/personal image.jpeg" alt="علي خالد - Ali Khaled">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume / CV Section -->
+        <section id="cv" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">
+                    <span data-i18n="cv_title">السيرة</span> <span class="gradient-text"
+                        data-i18n="cv_title_highlight">الذاتية</span>
+                </h2>
+
+                <div class="cv-container">
+
+                    <!-- Experience Row Title -->
+                    <div class="cv-section-header reveal delay-1">
+                        <h3><i class="fas fa-briefcase"></i> <span data-i18n="cv_exp">الخبرات العملية</span></h3>
+                    </div>
+
+                    <!-- Experience Cards Row -->
+                    <div class="experience-row reveal delay-2">
+                        <!-- Apex Technology -->
+                        <div class="exp-card glass-panel">
+                            <div class="exp-image">
+                                <img src="image/apex technology.jpg" alt="Apex Technology Logo">
+                            </div>
+                            <div class="exp-info">
+                                <span class="date" data-i18n="exp1_date">2023 - الآن</span>
+                                <h4 data-i18n="exp1_title">مطور Flutter</h4>
+                                <h5 data-i18n="exp1_company">Apex Technology</h5>
+                                <p data-i18n="exp1_desc">تطوير تطبيقات هواتف محمولة والمساهمة في بناء منتجات برمجية
+                                    فعلية باستخدام أحدث تقنيات Flutter و Dart.</p>
+                            </div>
+                        </div>
+
+                        <!-- UpgradeX -->
+                        <div class="exp-card glass-panel">
+                            <div class="exp-image">
+                                <img src="image/upgradex.jpg" alt="UpgradeX Logo">
+                            </div>
+                            <div class="exp-info">
+                                <span class="date" data-i18n="exp2_date">2020 - الآن</span>
+                                <h4 data-i18n="exp2_title">مدرب برمجة</h4>
+                                <h5 data-i18n="exp2_company">UpgradeX</h5>
+                                <p data-i18n="exp2_desc">تدريب الطلاب على أساسيات البرمجة ومهارات حل المشكلات وتطوير
+                                    التطبيقات.</p>
+                            </div>
+                        </div>
+
+                        <!-- EELU University -->
+                        <div class="exp-card glass-panel">
+                            <div class="exp-image">
+                                <img src="image/EELU.jpg" alt="EELU University Logo">
+                            </div>
+                            <div class="exp-info">
+                                <span class="date" data-i18n="exp3_date">الحالي</span>
+                                <h4 data-i18n="exp3_title">معيد بكلية الحاسبات</h4>
+                                <h5 data-i18n="exp3_company">الجامعة المصرية للتعلم الإلكتروني (EELU)</h5>
+                                <p data-i18n="exp3_desc">مساعدة الطلاب في الجانب العملي للمقررات البرمجية وتقديم الدعم
+                                    الأكاديمي.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education & Skills Row -->
+                    <div class="edu-skills-row reveal delay-3">
+
+                        <!-- Education -->
+                        <div class="edu-block">
+                            <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="cv_edu">التعليم</span></h3>
+                            <div class="exp-card glass-panel">
+                                <div class="exp-image">
+                                    <img src="image/menofia.jpg" alt="جامعة المنوفية - Menofia University Logo">
+                                </div>
+                                <div class="exp-info">
+                                    <span class="date" data-i18n="edu_date">2019 - 2023</span>
+                                    <h4 data-i18n="edu_title">بكالوريوس حاسبات ومعلومات</h4>
+                                    <h5 data-i18n="edu_uni">جامعة المنوفية</h5>
+                                    <p data-i18n="edu_desc">تخرجت بتقدير امتياز مع مرتبة الشرف (GPA 3.13).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="skills-block">
+                            <h3><i class="fas fa-code"></i> <span data-i18n="cv_skills">المهارات</span></h3>
+                            <div class="skills-grid glass-panel">
+                                <span class="skill-tag">Flutter</span>
+                                <span class="skill-tag">Dart</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">State Management (GetX / Bloc)</span>
+                                <span class="skill-tag">Clean Architecture</span>
+                                <span class="skill-tag">Git &amp; GitHub</span>
+                                <span class="skill-tag">UI/UX Implementation</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">OOP &amp; Data Structures</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works / Projects Section -->
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">
+                    <span data-i18n="works_title">أبرز</span> <span class="gradient-text"
+                        data-i18n="works_title_highlight">المشاريع</span>
+                </h2>
+
+                <!-- Category Filters -->
+                <div class="works-filter reveal delay-1">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+                    <button class="filter-btn" data-filter="apex" data-i18n="filter_apex">Apex Technology</button>
+                    <button class="filter-btn" data-filter="other" data-i18n="filter_other">مشاريعي</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="works-grid reveal delay-2">
+
+                    <!-- Apex Project 1 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex.png"
+                        data-title="Apex Technology - Project 1">
+                        <div class="work-image">
+                            <img src="image/apex.png" alt="Apex Mobile App Project 1" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 1</h3>
+                            <p>تطبيق هاتف ذكي تم تطويره خلال العمل بـ Apex Technology.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 2 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 2.png"
+                        data-title="Apex Technology - Project 2">
+                        <div class="work-image">
+                            <img src="image/apex 2.png" alt="Apex Mobile App Project 2" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 2</h3>
+                            <p>واجهة المستخدم وتكامل الخدمات الخاصة بشركة Apex Technology.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>UI Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 3 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 3.png"
+                        data-title="Apex Technology - Project 3">
+                        <div class="work-image">
+                            <img src="image/apex 3.png" alt="Apex Mobile App Project 3" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 3</h3>
+                            <p>شاشة مخصصة لعرض البيانات وتفاعل المستخدم داخل التطبيق.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Dart</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 4 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 4.png"
+                        data-title="Apex Technology - Project 4">
+                        <div class="work-image">
+                            <img src="image/apex 4.png" alt="Apex Mobile App Project 4" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 4</h3>
+                            <p>تطوير ميزات متقدمة وإدارة الحالة بفاعلية عالية.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>State Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 5 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 5.png"
+                        data-title="Apex Technology - Project 5">
+                        <div class="work-image">
+                            <img src="image/apex 5.png" alt="Apex Mobile App Project 5" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 5</h3>
+                            <p>ربط التطبيق مع الـ APIs والخدمات الخلفية.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 6 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 6.jpg"
+                        data-title="Apex Technology - Project 6">
+                        <div class="work-image">
+                            <img src="image/apex 6.jpg" alt="Apex Mobile App Project 6" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 6</h3>
+                            <p>شاشة تفاعلية تدعم تجربة مستخدم سلسة وجذابة.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>UX/UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 7 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 7.png"
+                        data-title="Apex Technology - Project 7">
+                        <div class="work-image">
+                            <img src="image/apex 7.png" alt="Apex Mobile App Project 7" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 7</h3>
+                            <p>تصميم متجاوب يناسب مختلف أحجام شاشات الهواتف.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 8 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 8.png"
+                        data-title="Apex Technology - Project 8">
+                        <div class="work-image">
+                            <img src="image/apex 8.png" alt="Apex Mobile App Project 8" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 8</h3>
+                            <p>إدارة المستخدمين وعرض التفاصيل بدقة عالية.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>User Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 9 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 9.png"
+                        data-title="Apex Technology - Project 9">
+                        <div class="work-image">
+                            <img src="image/apex 9.png" alt="Apex Mobile App Project 9" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 9</h3>
+                            <p>تحسين الأداء وسرعة التحميل والاستجابة.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 10 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 10.png"
+                        data-title="Apex Technology - Project 10">
+                        <div class="work-image">
+                            <img src="image/apex 10.png" alt="Apex Mobile App Project 10" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 10</h3>
+                            <p>واجهات مخصصة للعمليات وإصدار التنبيهات والأوامر.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Custom UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 11 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 11.png"
+                        data-title="Apex Technology - Project 11">
+                        <div class="work-image">
+                            <img src="image/apex 11.png" alt="Apex Mobile App Project 11" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 11</h3>
+                            <p>شاشة الإعدادات وتفضيلات الحساب الذكية.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Settings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apex Project 12 -->
+                    <div class="work-card glass-panel" data-category="apex" data-img="image/apex 12.png"
+                        data-title="Apex Technology - Project 12">
+                        <div class="work-image">
+                            <img src="image/apex 12.png" alt="Apex Mobile App Project 12" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge">Apex Technology</span>
+                            <h3>Apex Application - Project 12</h3>
+                            <p>تقارير وإحصائيات متكاملة لتجربة مستخدم احترافية.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Apex Technology</span>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Project 1: Smart Gym Tech -->
+                    <div class="work-card glass-panel" data-category="other" data-img="image/project Smart Gym Tech.png"
+                        data-title="Smart Gym Tech Application">
+                        <div class="work-image">
+                            <img src="image/project Smart Gym Tech.png" alt="Smart Gym Tech" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge other-badge" data-i18n="proj3_title">Gym Mobile
+                                Application</span>
+                            <h3 data-i18n="proj3_title">Smart Gym Tech</h3>
+                            <p data-i18n="proj3_desc">تطبيق لإدارة الصالات الرياضية ومتابعة المتدربين والاشتراكات.</p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Gym Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Project 2: King Delivery Market -->
+                    <div class="work-card glass-panel" data-category="other" data-img="image/project king delivery.png"
+                        data-title="King Delivery Application">
+                        <div class="work-image">
+                            <img src="image/project king delivery.png" alt="King Delivery" loading="lazy">
+                            <div class="work-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <span class="company-badge other-badge" data-i18n="proj2_title">Multi Vendor Market</span>
+                            <h3 data-i18n="proj2_title">King Delivery App</h3>
+                            <p data-i18n="proj2_desc">تطبيق متجر إلكتروني متعدد البائعين والتوصيل مع لوحة تحكم متكاملة.
+                            </p>
+                            <div class="work-tags">
+                                <span>Flutter</span>
+                                <span>E-Commerce</span>
+                                <span>Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">
+                    <span data-i18n="contact_title">تواصل</span> <span class="gradient-text"
+                        data-i18n="contact_title_highlight">معي</span>
+                </h2>
+
+                <div class="contact-container glass-panel centered-contact reveal delay-1">
+                    <div class="contact-info">
+                        <h3 data-i18n="contact_sub">لنتحدث عن مشروعك القادم</h3>
+                        <p data-i18n="contact_desc">متاح للعمل على مشاريع جديدة أو تقديم استشارات برمجية وتدريب.</p>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4 data-i18n="contact_email">البريد الإلكتروني</h4>
+                                <p><a href="mailto:ali.khaled.dev@gmail.com">ali.khaled.dev@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4 data-i18n="contact_phone">الهاتف</h4>
+                                <p><a href="tel:+201092243646" dir="ltr">+20 109 224 3646</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 data-i18n="contact_location">الموقع</h4>
+                                <p data-i18n="contact_city">مدينة السادات، مصر</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://wa.me/201092243646" target="_blank" class="social-icon whatsapp-icon"
+                                title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:ali.khaled.dev@gmail.com" class="social-icon gmail-icon" title="Gmail">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal for Image Preview -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev" aria-label="الصورة السابقة"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="معاينة الصورة">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" aria-label="الصورة التالية"><i class="fas fa-chevron-left"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <a href="#home" class="logo footer-logo">
+                Ali<span class="gradient-text">Khaled</span>
+            </a>
+            <p class="footer-email">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:aaloloo021@gmail.com">aaloloo021@gmail.com</a>
+            </p>
+            <div class="footer-socials">
+                <a href="https://wa.me/201092243646" target="_blank" class="social-icon whatsapp-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Ali Khaled. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
