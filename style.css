@@ -1176,6 +1176,14 @@ footer {
     .contact-container.centered-contact .info-item {
         max-width: 100%;
     }
+
+    .experience-row {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-skills-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================
@@ -1360,4 +1368,139 @@ html[dir="ltr"] .lightbox-close {
     background: var(--gradient);
     border-color: transparent;
     transform: translateY(-50%) scale(1.1);
+}
+
+/* =========================================
+   Extra Small Screens (max 480px)
+   ========================================= */
+@media (max-width: 480px) {
+
+    /* Container */
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: 60px 0;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Home */
+    .home-text h3 {
+        font-size: 1rem;
+    }
+
+    .home-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 9px 16px;
+        font-size: 0.82rem;
+    }
+
+    .home-buttons {
+        gap: 8px;
+    }
+
+    /* Navbar */
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .control-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
+    }
+
+    .nav-controls {
+        gap: 8px;
+    }
+
+    /* CV Section */
+    .cv-section-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .exp-info h4 {
+        font-size: 1rem;
+    }
+
+    .exp-info h5 {
+        font-size: 0.85rem;
+    }
+
+    .exp-info p {
+        font-size: 0.82rem;
+    }
+
+    .exp-image {
+        height: 170px;
+    }
+
+    /* Skills */
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    /* Contact */
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-info p {
+        font-size: 0.88rem;
+    }
+
+    .info-item h4 {
+        font-size: 0.95rem;
+    }
+
+    .info-item p {
+        font-size: 0.82rem;
+    }
+
+    .contact-container.centered-contact {
+        padding: 1.2rem 0.75rem;
+    }
+
+    /* Footer */
+    .footer-logo {
+        font-size: 1.3rem;
+    }
+
+    .footer-copy {
+        font-size: 0.75rem;
+    }
+
+    /* Works */
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.82rem;
+    }
+
+    .work-info h3 {
+        font-size: 1rem;
+    }
+
+    .work-info p {
+        font-size: 0.82rem;
+    }
 }
