@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle');
     const htmlElement = document.documentElement;
     
-    // Check saved language
+    // Check saved language (default: English)
     let currentLang = localStorage.getItem('portfolio_lang') || 'en';
     
     const setLanguage = (lang) => {
@@ -278,6 +278,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    });
+
+    // Show all cards by default on page load
+    workCards.forEach(card => {
+        card.style.display = 'block';
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1)';
     });
 
     /* ==============================================
